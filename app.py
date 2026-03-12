@@ -9,6 +9,13 @@ import json
 st.title('Análisis de Sentimiento')
 image = Image.open('emoticones.jpg')
 st.image(image)
+# Cargar y mostrar la animación
+def load_lottie_file(path: str):
+    with open(path, "r") as f:
+        return json.load(f)
+
+lottie_animation = load_lottie_file("Linkedin Reactions.json")
+st_lottie(lottie_animation, height=200, loop=True, key="reactions")
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
