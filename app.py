@@ -17,7 +17,7 @@ def load_lottie_file(path: str):
         return json.load(f)
 
 lottie_mood = load_lottie_file("Running Cat.json")
-st_lottie(lottie_mood, height=500, loop=True, key="mood_selector")
+st_lottie(lottie_mood, height=300, loop=True, key="mood_selector")
 
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
