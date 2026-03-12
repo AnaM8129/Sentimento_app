@@ -7,7 +7,6 @@ from streamlit_lottie import st_lottie
 import json
 
 st.title('Análisis de Sentimiento')
-<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
 image = Image.open('emoticones.jpg')
 st.image(image)
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
