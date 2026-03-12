@@ -15,9 +15,6 @@ def load_lottie_file(path: str):
     with open(path, "r") as f:
         return json.load(f)
 
-lottie_reactions = load_lottie_file("Linkedin Reactions.json")
-st_lottie(lottie_reactions, height=200, loop=True, key="reactions")
-
 lottie_mood = load_lottie_file("Interactive Mood Selector UI.json")
 st_lottie(lottie_mood, height=200, loop=True, key="mood_selector")
 
