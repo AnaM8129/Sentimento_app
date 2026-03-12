@@ -9,8 +9,58 @@ import json
 st.title('Análisis de Sentimiento')
 st.markdown("""
     <style>
+    /* Fondo general */
     .stApp {
         background: radial-gradient(ellipse at center, #1a3a6b 0%, #0d1b3e 60%, #060d1f 100%);
+    }
+
+    /* Quitar franjas negras de la animación Lottie */
+    iframe {
+        background: transparent !important;
+        border-radius: 16px;
+    }
+
+    /* Título principal */
+    h1 {
+        color: #ffffff !important;
+        text-shadow: 0px 0px 12px rgba(100, 160, 255, 0.6);
+    }
+
+    /* Subtítulos */
+    h2, h3 {
+        color: #a8c8ff !important;
+    }
+
+    /* Texto general */
+    p, label, .stText {
+        color: #d0e4ff !important;
+    }
+
+    /* Expander */
+    .streamlit-expanderHeader {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        border-radius: 10px !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255,255,255,0.15) !important;
+    }
+
+    /* Input de texto */
+    .stTextInput > div > div > input {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(100, 160, 255, 0.4) !important;
+        border-radius: 10px !important;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background: rgba(6, 20, 50, 0.85) !important;
+        border-right: 1px solid rgba(100,160,255,0.2);
+    }
+
+    /* Texto del sidebar */
+    section[data-testid="stSidebar"] * {
+        color: #a8c8ff !important;
     }
     </style>
 """, unsafe_allow_html=True)
