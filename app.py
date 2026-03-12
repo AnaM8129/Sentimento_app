@@ -7,8 +7,8 @@ from streamlit_lottie import st_lottie
 import json
 
 st.title('Análisis de Sentimiento')
-image = Image.open('emoticones.jpg')
-st.image(image)
+#image = Image.open('emoticones.jpg')
+#st.image(image)
 
 # Cargar y mostrar la animación
 def load_lottie_file(path: str):
