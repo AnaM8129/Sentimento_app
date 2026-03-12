@@ -47,6 +47,8 @@ with st.expander('Analizar texto'):
         x=round(blob.sentiment.polarity,2)
         if x > 0.0 and x <=1.0:
             st.write( 'Es un sentimiento Positivo 😊')
+            lottie_happy = load_lottie_file("Happy SUN.json")
+            st_lottie(lottie_happy, height=200, loop=True, key="happy")
         elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
         else:
