@@ -51,5 +51,7 @@ with st.expander('Analizar texto'):
             st_lottie(lottie_happy, height=200, loop=True, key="happy")
         elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
+            lottie_sad = load_lottie_file("Sad Emoji.json")
+            st_lottie(lottie_sad, height=200, loop=True, key="sad")
         else:
             st.write( 'Es un sentimiento Neutral 😐')
