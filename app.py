@@ -16,6 +16,14 @@ def load_lottie_file(path: str):
 
 lottie_animation = load_lottie_file("Linkedin Reactions.json")
 st_lottie(lottie_animation, height=200, loop=True, key="reactions")
+
+def load_lottie_file(path: str):
+    with open(path, "r") as f:
+        return json.load(f)
+
+lottie_animation = load_lottie_file("Interactive Mood Selector UI.json")
+st_lottie(lottie_animation, height=200, loop=True, key="reactions")
+
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
