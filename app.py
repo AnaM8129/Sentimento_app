@@ -7,6 +7,13 @@ from streamlit_lottie import st_lottie
 import json
 
 st.title('Análisis de Sentimiento')
+st.markdown("""
+    <style>
+    .stApp {
+        background: radial-gradient(ellipse at center, #1a3a6b 0%, #0d1b3e 60%, #060d1f 100%);
+    }
+    </style>
+""", unsafe_allow_html=True)
 #image = Image.open('emoticones.jpg')
 #st.image(image)
 
