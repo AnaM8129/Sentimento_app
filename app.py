@@ -8,7 +8,6 @@ import json
 
 st.title('Análisis de Sentimiento')
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.3/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/ae63c7df-ddaa-4e30-955a-a82daec3a9c0/IgiIxVNxzK.lottie" stateMachineId="StateMachine1" style="width: 300px;height: 300px"></dotlottie-wc>
 image = Image.open('emoticones.jpg')
 st.image(image)
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
